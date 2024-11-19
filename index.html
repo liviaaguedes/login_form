@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login com Javascript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+<form class="box" action="index.html" method="post">
+    <h1>Login Usuario</h1>
+
+    <input type="text" name="" placeholder="Login" id="login">
+    <input type="password" name="" placeholder="Senha" id="senha">
+    <input type="submit" onclick="logar(); return false">
+</form>
+
+
+
+<script>
+      function logar(){ // função logar
+        //variáveis
+        var login = document.getElementById('login').value //variavel login recebe o que for digitado no input login
+        var senha = document.getElementById('senha').value //
+       // validação do usuario e senha
+       if(login == "admin" && senha == "admin") {
+          alert('login om sucesso'); //mostra mensagem
+
+        location.href = "home.html"; //chama pagina home.html
+       }
+       else{
+        alert('usuario ou senha incorretos! ');
+       }
+
+    }
+
+
+</script>
+
+
+
+</body>
+</html>
